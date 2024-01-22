@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -103,7 +103,7 @@
 		OBJ_156 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HttpClientTests.swift */; };
 		OBJ_157 /* PersistentStorageResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* PersistentStorageResponseHandlerTests.swift */; };
 		OBJ_158 /* UrlExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* UrlExtensionTests.swift */; };
-		OBJ_160 /* Amplitude_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "amplitude-swift::Amplitude-Swift::Product" /* Amplitude_Swift.framework */; };
+		OBJ_160 /* AmplitudeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "amplitude-swift::Amplitude-Swift::Product" /* AmplitudeSwift.framework */; };
 		OBJ_88 /* Amplitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Amplitude.swift */; };
 		OBJ_89 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Configuration.swift */; };
 		OBJ_90 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConsoleLogger.swift */; };
@@ -123,14 +123,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = amplitude-swift::Amplitude-Swift;
+			remoteGlobalIDString = "amplitude-swift::Amplitude-Swift";
 			remoteInfo = "Amplitude-Swift";
 		};
 		580FD1F1294A56F60036777B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = amplitude-swift::Amplitude-SwiftTests;
+			remoteGlobalIDString = "amplitude-swift::Amplitude-SwiftTests";
 			remoteInfo = "Amplitude-SwiftTests";
 		};
 /* End PBXContainerItemProxy section */
@@ -234,7 +234,7 @@
 		OBJ_81 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		OBJ_82 /* AmplitudeSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AmplitudeSwift.podspec; sourceTree = "<group>"; };
 		OBJ_9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		"amplitude-swift::Amplitude-Swift::Product" /* Amplitude_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Amplitude_Swift.framework; path = AmplitudeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"amplitude-swift::Amplitude-Swift::Product" /* AmplitudeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AmplitudeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"amplitude-swift::Amplitude-SwiftTests::Product" /* Amplitude_SwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = Amplitude_SwiftTests.xctest; path = "Amplitude-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -251,7 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_160 /* Amplitude_Swift.framework in Frameworks */,
+				OBJ_160 /* AmplitudeSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +504,7 @@
 		OBJ_75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"amplitude-swift::Amplitude-Swift::Product" /* Amplitude_Swift.framework */,
+				"amplitude-swift::Amplitude-Swift::Product" /* AmplitudeSwift.framework */,
 				"amplitude-swift::Amplitude-SwiftTests::Product" /* Amplitude_SwiftTests.xctest */,
 			);
 			name = Products;
@@ -529,7 +529,7 @@
 				BA34B23B2AA0723A00F88097 /* AnalyticsConnector */,
 			);
 			productName = Amplitude_Swift;
-			productReference = "amplitude-swift::Amplitude-Swift::Product" /* Amplitude_Swift.framework */;
+			productReference = "amplitude-swift::Amplitude-Swift::Product" /* AmplitudeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"amplitude-swift::Amplitude-SwiftTests" /* Amplitude-SwiftTests */ = {
@@ -908,12 +908,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,7";
 				TARGET_NAME = AmplitudeSwift;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -945,12 +945,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,3,4";
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,7";
 				TARGET_NAME = AmplitudeSwift;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
